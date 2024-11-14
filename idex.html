@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titel</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="input-section">
+      <div class="input-group">
+        <label for="bill">Bill</label>
+        <input type="number" id="bill" placeholder="$">
+      </div>
+      <div class="input-group">
+        <label>Select Tip %</label>
+        <div class="tip-buttons">
+          <button class="tip-btn">5%</button>
+          <button class="tip-btn">10%</button>
+          <button class="tip-btn">15%</button>
+          <button class="tip-btn">25%</button>
+          <button class="tip-btn">50%</button>
+          <input type="number" class="custom-tip" placeholder="Custom">
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="people">Number of People</label>
+        <input type="number" id="people" placeholder="0">
+      </div>
+     </div>
+     <div class="output-section">
+      <div class="output-group">
+        <p>Tip Amount <span>/ person</span></p>
+        <h2 id="tip-amount">$0.00</h2>
+      </div>
+      <div class="output-group">
+        <p>Total <span>/ person</span></p>
+        <h2 id="total-amount">$0.00</h2>
+      </div>
+      <button id="reset-btn" disabled>RESET</button>
+    </div>
+  </div>
+</body>
+</html>
